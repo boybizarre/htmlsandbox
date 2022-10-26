@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & Input</title>
+</head>
+<body>
+    <form action="process.php" autocomplete="on">
+        <!-- Name -->
+    <div>
+        <label for="name">Name</label><br>
+        <input type="text" id="name" placeholder="Olakunle Jamal">
+    </div>
+        <!-- Email -->
+    <div>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" placeholder="Enter an email">
+    </div>
+        <!-- Textarea -->
+    <div>
+        <label for="message">Message</label> <br>
+        <textarea name="message" id="message" cols="50" rows="5"></textarea>
+    </div>
+        <!-- Select -->
+    <div>
+        <label for="sex">Sex</label>
+        <select name="sex" id="sex">
+            <option value="male">Male</option>
+            <option value="female"selected>Female</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+        <!-- Number -->
+    <div>
+        <label for="age">Age</label><br>
+        <input type="number" name="number" id="age">
+    </div>
+        <!-- Date -->
+    <div>
+       <label for="birthdate">Birthdate</label><br>
+        <input type="date" name="birthdate" id="birthdate">
+    </div>
+        <!-- Radio -->
+    <div>
+        <label for="membership">Membership</label><br>
+        <input type="radio" name="membership" value="single"> Single
+        <input type="radio" name="membership" value="standard" checked> Standard
+        <input type="radio" name="membership" value="super"> Super
+    <div>
+    <div>
+        <label for="hobbies">I like...</label><br>
+        <input type="checkbox" name="likes" value="car"> Car
+        <input type="checkbox" name="likes" value="bike"> Bike
+        <input type="checkbox" name="likes" value="boat"> Boat
+    </div>
+    <div>
+        <datalist>
+            
+        </datalist>
+    </div>
+        <!--Input Submit -->
+        <input type="submit">
+
+        <!-- using button tag -->
+        <button type="submit">Submit</button>
+
+        <!-- Input Reset -->
+        <input type="reset">
+
+        <!-- Button Reset -->
+        <button type="reset">Reset</button>
+</body>
+</html>
